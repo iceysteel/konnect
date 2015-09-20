@@ -22,7 +22,9 @@ html {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  
 }
+
 
 .wrapper {
     width: 90%;
@@ -83,9 +85,29 @@ body {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/**{
+    border: solid 1px black;
+}*/
+
 .header-container {
     position: fixed;
     width: 100%;
+    z-index: 10;
+    height: 5%;
+    text-align: center;
+
+
+
+
+}
+
+.header-container h1{
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 5px;
+    width:100%;
+    text-align: center;
+
 
 }
 
@@ -120,40 +142,33 @@ body {
     width: 100%;
     height: auto;
     font-family: 'PT Sans', sans-serif;
-    top: 80px;
-
-
-
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-#txtBox{
-    background-color: #e44d26;
-    float: left;
+
+
+#txtbox{
     width: 80%;
-    height: 120px;
-    
-
-        border-radius: 0px;
-    -moz-border-radius: 30px;
-    overflow: hidden;
-
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
 
 }
-
-
 #send{
     
     font-size: 60px;
     color: white;
  
-    width:60px;
+    width:100%;
    
 
     text-align: center;
     background-color: #34495e;
-    border-radius: 100%;
-    height: 60px;
-    line-height: 60px;
+    border-radius: 10%;
+    height: 40px;
+    line-height: 40px;
     margin-right: auto;
     margin-left: auto;
     transition: background-color .5s;
@@ -162,27 +177,29 @@ body {
 }
 #send:hover {
 background-color: #bdc3c7;
-
+cursor: pointer;
 
 }
 #sendwrap{
- 
+    display: inline-block;
     width: 15%;
-    float: right;
-    margin-top: 30px;
+    vertical-align:middle;
+
 
 
 }
 
 #message {
-    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #ecf0f1;
     color:#a3b1b2;
     border-radius: 5px;
     -moz-border-radius: 30px;
     
-    height: 90px;
-    width: 93%;
+    height: 10%;
+    width: 80%;
+    vertical-align: middle;
 
 }
 
@@ -193,7 +210,9 @@ background-color: #bdc3c7;
 
 }
 
-
+.title {
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 

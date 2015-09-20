@@ -21,9 +21,12 @@ $(document).ready(function() {
     else{
       var $el = $('<div class="incoming">');
     }
+
+    var $testdiv = $('<div style="clear:both;"></div>');
     $el.append('<strong>' + Body.sender + ': </strong>');
     $el.append(Body.Body);
     $el.appendTo('#msgs');
+    $testdiv.appendTo('#msgs');
   }
 
   function sendMessage() {
