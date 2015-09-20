@@ -23,6 +23,7 @@ $(document).ready(function() {
     }
     $el.append('<strong>' + message.sender + ': </strong>');
     $el.append(message.message);
+    $el.append('<div style="clear:both;"></div>');
     $el.appendTo('#msgs');
   }
 
