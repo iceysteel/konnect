@@ -1,0 +1,437 @@
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+*{
+    border: 0px solid black;
+}
+html {
+	max-width: 100%;
+	 overflow-x: hidden;
+}
+body {
+ max-width: 100%;
+ width: 100%;   
+ height: auto;
+ margin: 0;
+ padding: 100px 0 0 0;
+ overflow-x: hidden;
+
+}
+#mid{
+    text-align: center;
+    position: relative;
+    top: -10px;
+    margin-top: 0px;
+    width: auto;
+    font-family: 'Didact Gothic', serif;
+    font-size: 1.2em;
+
+
+
+}
+
+#footer h1{
+    color: white;
+    font-family: 'Didact Gothic', serif;
+    font-size: 35px;
+}
+
+#mid p{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    width: 50%;
+    color: #2c3e50;
+}
+
+#navBar{
+ width:100%;
+    height: 75px;
+    background-color: #d35400;
+    position:fixed;
+    top: 0px;
+    margin:0;
+    padding:0;
+    opacity: .75;
+	z-index:10;
+}
+
+#title{
+    margin: 20px;
+    width:40%;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    float: left;
+    font-weight: 200;
+}
+ #navBar a {
+  float: right;
+     color:white;
+     margin: 25px;
+     font-size: 1.5em;
+     text-decoration: none;
+     font-family: 'Didact Gothic', sans-serif;
+ }
+
+ #navBar a:hover {
+    color: #00AEEF;
+     transition: .2s;
+ }
+
+#header{
+ width: auto;
+ height: 50%;
+ text-align: center;
+    margin:0px;
+    padding-top: 100px;
+        position: relative;
+    top: -100px;
+z-index: -10;
+     background-color: #ecf0f1;
+}
+
+img{
+ width: 40%;
+ border-radius: 5%;
+    margin: auto;
+
+}
+
+
+
+#description{
+	padding: 0px auto 0px auto;
+    font-size: 1.8em;
+    width:75%;
+    margin: 20px auto 0px auto;
+    font-family: 'Satisfy', cursive;
+    color: #f39c12;
+    
+}
+
+#content{
+ text-align: center;  
+ width: 100%;
+
+ margin-left: auto;
+ margin-right: auto;
+
+
+}
+
+iframe{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    top: -50px;
+    position: relative;
+   
+    border-radius: 1%;
+ 
+}
+
+
+.textBlock{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin: 1px;
+}
+ .subHeader{
+     font-size: 1.6em;
+     font-family: 'Didact Gothic', sans-serif;
+     font-weight: 400;
+     color: #808080;
+}
+
+
+.subContent{
+ font-family: 'Didact Gothic', sans-serif;
+    font-weight: 100;
+    color: #808080;
+    font-size: .95 em;
+}
+.linkBlock{
+    clear:both;
+    width: 35%;
+    height: auto;
+    margin: 50px 50px;
+    display: inline-block;
+}
+
+#footer{
+ width: 100%;
+ height: auto;
+ text-align: center;
+ clear: both;
+ background-color: #e67e22;
+    text-align: center;
+    margin:0px;
+    padding:5px;
+}
+#bottom{
+    width:100%;
+    height: 100px;
+    background-color: #e67e22;
+    text-align: center;
+    
+        
+    
+}
+
+#bottom p{
+position: relative;
+ color: white;
+    margin: auto;
+    top: 30px;
+   font-family: 'Didact Gothic', sans-serif;
+    font-size: .9em;
+     
+}
+ul{
+ list-style-type: none; 
+ width: 80%;
+ height: auto;
+ display:inline-block;
+ text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+li{
+ margin: 10px auto;
+ display: inline-block;
+ background-color: white;
+ border-radius: 5px;
+    padding: .5em;
+    margin:.5em;
+  background-color: #A6A6A6;
+
+}
+
+li a{
+ text-decoration: none;
+ padding: 1em;
+ font-size: .9em;
+  font-family: 'Didact Gothic', sans-serif;
+ color: white;
+    border:0;
+    
+
+}
+
+h2{
+ padding: 0px;   
+    color:#F03236;
+    margin:20px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+#facebook:hover{
+    background-color: #3b5998;
+    transition: .2s;
+}
+
+#git:hover{
+    background-color: gray;
+        transition: .2s;
+}
+
+#linkd:hover{
+    background-color: #0077b5;
+        transition: .2s;
+}
+
+
+
+/* MOBILE */
+
+
+
+@media all and (max-width: 1000px) {
+
+    
+
+
+    #content{
+        width:90%
+       
+    }
+    .subHeader2{
+    clear:both;
+    font-size: 1.4em;
+
+    color: #587774;
+    text-decoration: none;
+    margin: 5px auto;
+    display: block;
+}
+    .linkBlock{
+    clear:both;
+    width: 35%;
+    height: auto;
+    margin: 50px 50px;
+    display: inline;
+} 
+    .textBlock{
+    width: 100%;
+    display: inline;
+    padding: 10px;
+    margin: 1px;
+}
+    
+#header{
+    background-color: #ecf0f1;   
+    
+}
+}
+
+@media all and (max-width: 600px) {
+body {
+ padding: 0px;   
+}
+    
+#header{
+
+    
+    
+}
+    
+#navBar{
+    height: 60px;
+    padding: 0px;
+}
+
+#title{
+    
+    margin: 20px 0px auto 10px;
+    font-size: 1em;
+    width:45%;
+    color: white;
+
+    float: left;
+}
+ #navBar a {
+     float: right;
+     color: black;
+     margin: 20px 10px 0px 10px;
+     font-size: 1em;
+     text-decoration: none;
+
+     border-radius: 5px;
+     background-color: white;
+     padding: .2em;
+ } 
+  
+    
+}
+
+
+#description{
+    font-size: 2em;
+    width:75%;
+    margin: 30px auto;
+
+    
+}
+
+#header a {
+    text-decoration: none;
+    background-color: #0AA04B;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1em;
+
+    color: white;
+    margin: 
+}
+
+
+    
+   #content{
+ text-align: center;  
+ width: 80%;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
+       
+
+}
+
+
+
+.textBlock{
+    width: 100%;
+    display: inline;
+    padding: 10px;
+    margin: 1px;
+}
+ .subHeader{
+     font-size: 1.6em;
+
+     color: #808080;
+}
+
+.subHeader2{
+    clear:both;
+    font-size: 1em;
+
+    color: #587774;
+    text-decoration: none;
+    margin: 5px auto;
+    display: block;
+}
+
+.subContent{
+
+    color: #808080;
+
+}
+input[type="email"]{
+    width: 120px;
+    display: block;
+    margin-left: 37%;
+    background: white;
+    color: gray;
+    border-width: 1px;
+    font-family: Didact Gothic;
+
+}
+input[type="comment/question"]{
+    width:200px;
+    height: 50px;
+    margin-left: 1%;
+    background: white;
+    color: gray;
+    border-width: 1px;
+    font-family: Didact Gothic;
+}
+
+input [type="submit"]{
+    font-family: Didact Gothic;
+
+}
+
+.linkBlock{
+    clear:both;
+    width: 35%;
+    height: auto;
+    margin: 50px 50px;
+    display: inline;
+} 
+
+    .link{
+     width: 50%;   
+    }
+	
+
+
+    
+}
+
