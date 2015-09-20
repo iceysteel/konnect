@@ -42,7 +42,7 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #d35400;
+    background: #e67e22;
 }
 
 .title {
@@ -142,7 +142,7 @@ body {
     width: 100%;
     height: auto;
     font-family: 'PT Sans', sans-serif;
-    background-color: #bdc3c7;
+    
 }
 
 
