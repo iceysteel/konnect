@@ -42,11 +42,13 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #00AEEF;
+    background: #d35400;
 }
 
 .title {
     color: white;
+    display:inline-block;
+    vertical-align: middle;
 }
 
 /* ==============
