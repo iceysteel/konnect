@@ -24,9 +24,8 @@ $(document).ready(function() {
     var $testdiv = $('<div style="clear:both;"></div>');
     $el.append('<strong>' + message.sender + ': </strong>');
     $el.append(message.message);
-    
     $el.appendTo('#msgs');
-    $testdiv.appentTo('#msgs');
+    $testdiv.appendTo('#msgs');
   }
 
   function sendMessage() {
