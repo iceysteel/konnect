@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  dpd.messages.on('create', function(message) {
-    renderMessage(message);
+  dpd.messages.on('create', function(Body) {
+    renderMessage(Body);
   });
 
   dpd.messages.get(function(messages) {
@@ -14,35 +14,35 @@ $(document).ready(function() {
 
   $('#send').click(sendMessage);
 
-  function renderMessage(message) {
-    if(message.sender === 'customer'){
+  function renderMessage(Body) {
+    if(Body.sender === 'customer'){
       var $el = $('<div class="outgoing">');
     }
     else{
       var $el = $('<div class="incoming">');
     }
-    $el.append('<strong>' + message.sender + ': </strong>');
-    $el.append(message.message);
+    $el.append('<strong>' + Body.sender + ': </strong>');
+    $el.append(Body.Body);
     $el.appendTo('#msgs');
   }
 
   function sendMessage() {
     var sender = 'customer';
-    var message = $('#message').val();
+    var Body = $('#message').val();
     dpd.messages.post({
       sender: sender,
-      message: message
-    }, function(message, err) {
+      Body: Body
+    }, function(Body, err) {
       if (err) {
-        if (err.message) {
-          alert(err.message);
+        if (err.Body) {
+          alert(err.Body);
         } else if (err.errors) {
           var errors = "";
           if (err.errors.sender) {
             errors += err.errors.sender + "\n";
           } 
-          if (err.errors.message) {
-            errors += err.errors.message + "\n";
+          if (err.errors.Body) {
+            errors += err.errors.Body + "\n";
           } 
           alert(errors);
         }
