@@ -89,6 +89,7 @@ body {
     border: solid 1px black;
 }*/
 
+
 .header-container {
     position: fixed;
     width: 100%;
@@ -149,7 +150,7 @@ body {
 
 
 #txtbox{
-    width: 80%;
+    width: 60%;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
