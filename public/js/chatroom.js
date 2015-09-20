@@ -15,7 +15,12 @@ $(document).ready(function() {
   $('#send').click(sendMessage);
 
   function renderMessage(message) {
-    var $el = $('<div>');
+    if(message.sender === 'customer'){
+      var $el = $('<div class="outgoing">');
+    }
+    else{
+      var $el = $('<div class="incoming">');
+    }
     $el.append('<strong>' + message.sender + ': </strong>');
     $el.append(message.message);
     $el.appendTo('#msgs');
