@@ -88,6 +88,9 @@ body {
 .header-container {
     position: fixed;
     width: 100%;
+    z-index: 10;
+    height: 50px;
+    text-align: center;
 
 }
 
@@ -122,7 +125,8 @@ body {
     width: 100%;
     height: auto;
     font-family: 'PT Sans', sans-serif;
-    top: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -132,6 +136,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+    padding: 5px;
 
 }
 #send{
@@ -175,7 +180,7 @@ cursor: pointer;
     border-radius: 5px;
     -moz-border-radius: 30px;
     
-    height: 90px;
+    height: 80px;
     width: 80%;
     vertical-align: middle;
 
@@ -188,7 +193,9 @@ cursor: pointer;
 
 }
 
-
+.title {
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 
