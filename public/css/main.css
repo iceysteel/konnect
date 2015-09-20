@@ -42,7 +42,7 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #f39c12;
+    background: #00AEEF;
 }
 
 .title {
@@ -91,7 +91,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 10;
-    height: 5%;
+    height: 10%;
     text-align: center;
 
 
