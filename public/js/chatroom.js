@@ -12,13 +12,13 @@ $(document).ready(function() {
     }
   });
 
-  $('#send-btn').click(sendMessage);
+  $('#send').click(sendMessage);
 
   function renderMessage(message) {
-    var $el = $('<li>');
+    var $el = $('<div>');
     $el.append('<strong>' + message.sender + ': </strong>');
     $el.append(message.message);
-    $el.appendTo('#chatbox');
+    $el.appendTo('#msgs');
   }
 
   function sendMessage() {
