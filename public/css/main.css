@@ -35,16 +35,14 @@ body {
     ALL: Orange Theme
    =================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
+
 
 
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #f39c12;
 }
 
 .title {
