@@ -12,7 +12,9 @@ $(document).ready(function() {
     }
   });
 
-  $('#send').click(sendMessage);
+  //below I commented out the dpd portion
+  //$('#send').click(sendMessage);
+
 
   function renderMessage(Body) {
     if(Body.sender === 'customer'){
